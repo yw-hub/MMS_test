@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.medsec.dao.NotificationTokenMapper">
+    <select id="getTokensByUserId" resultType="String" parameterType="String">
+      select fcm_token from NotificationToken where uid = #{uid}
+    </select>
+
+    <select id="getUserByToken" resultType="com.medsec.entity.NotificationToken" parameterType="String">
+      select * from NotificationToken where fcm_token = #{fcm_token}
+    </select>
+
+    <insert id="insertUserToken" parameterType="com.medsec.entity.NotificationToken">
+      insert ignore into NotificationToken (uid, fcm_token) values (#{uid}, #{fcm_token})
+    </insert>
+
+    <delete id="deleteUserToken" parameterType="com.medsec.entity.NotificationToken">
+      delete from NotificationToken where uid = #{uid} and fcm_token= #{fcm_token}
+    </delete>
+
+</mapper>

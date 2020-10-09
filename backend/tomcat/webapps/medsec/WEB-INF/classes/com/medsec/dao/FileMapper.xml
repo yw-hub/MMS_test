@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.medsec.dao.FileMapper">
+    <select id="selectFileById" parameterType="String" resultType="com.medsec.entity.File">
+        SELECT * FROM File WHERE id=#{id}
+    </select>
+
+    <select id="getLink" parameterType="String" resultType="String">
+        SELECT link FROM File WHERE id=#{id}
+    </select>
+
+    <insert id="insertFile" parameterType="com.medsec.entity.File">
+        INSERT INTO File (id, apptid, title, link)
+        VALUES (#{id},#{apptid},#{title},#{link});
+    </insert>
+
+    <update id="updateFile" parameterType="com.medsec.entity.File">
+        update File set
+        File.apptid=#{apptid},
+        File.title=#{title},
+        File.link=#{link}
+        where File.id=#{id}
+    </update>
+</mapper>

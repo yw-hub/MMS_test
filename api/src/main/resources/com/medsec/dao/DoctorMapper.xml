@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.medsec.dao.DoctorMapper">
+    <select id="selectAllDoctors" resultType="com.medsec.entity.Doctor">
+        SELECT * FROM Doctor;
+    </select>
+    <select id="selectOneDoctor" resultType="com.medsec.entity.Doctor">
+        SELECT * FROM Doctor where Doctor.id=#{id};
+    </select>
+	
+    <select id="getDoctorsByUserId" resultType="com.medsec.entity.Doctor">
+		SELECT *
+		FROM Doctor
+		WHERE Doctor.id IN
+			  (SELECT did 
+			   From Appointment 
+			   WHERE uid= #{uid} AND (status != 'CANCELLED'))
+    </select>	
+	
+    <delete id="deleteDoctor" parameterType="String">
+        DELETE FROM Doctor where Doctor.id=#{id};
+    </delete>
+    <update id="updateDoctor" parameterType="com.medsec.entity.Doctor">
+        update Doctor SET
+        Doctor.name=#{name},
+        Doctor.bio=#{bio},
+        Doctor.address=#{address},
+        Doctor.phone=#{phone},
+        Doctor.fax=#{fax},
+        Doctor.email=#{email},
+        Doctor.website=#{website},
+        Doctor.expertise=#{expertise}
+        where Doctor.id=#{id}
+    </update>
+    <insert id="addDoctor" parameterType="com.medsec.entity.Doctor">
+        INSERT INTO Doctor(id,name,bio,address,phone,fax,email,website,expertise)
+        VALUES (#{id},#{name},#{bio},#{address},#{phone},#{fax},#{email},#{website},#{expertise})
+    </insert>
+</mapper>

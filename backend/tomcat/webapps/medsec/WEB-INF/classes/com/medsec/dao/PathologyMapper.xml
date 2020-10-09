@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.medsec.dao.PathologyMapper">
+
+    <select id="selectAllPathologies" resultType="com.medsec.entity.Pathology">
+        SELECT * FROM Pathology;
+    </select>
+
+    <select id="selectOnePathology" parameterType="String" resultType="com.medsec.entity.Pathology">
+        select * from Pathology where Pathology.id=#{id};
+    </select>
+
+    <insert id="addPathology" parameterType="com.medsec.entity.Pathology">
+        insert into Pathology(id,name,address,phone,hours,website)
+        values (#{id},#{name},#{address},#{phone},#{hours},#{website})
+    </insert>
+
+    <delete id="deletePathology" parameterType="String">
+        delete from Pathology where Pathology.id=#{id}
+    </delete>
+
+    <update id="updatePathology" parameterType="com.medsec.entity.Pathology">
+        update Pathology set
+        Pathology.name=#{name},
+        Pathology.address=#{address},
+        Pathology.phone=#{phone},
+        Pathology.hours=#{hours},
+        Pathology.website=#{website}
+        where Pathology.id=#{id}
+    </update>
+</mapper>

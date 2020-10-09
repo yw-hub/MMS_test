@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "94177092800",
+    "firebase_url": "https://medical-heal.firebaseio.com",
+    "project_id": "medical-heal",
+    "storage_bucket": "medical-heal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94177092800:android:0eae1682d82b16def33925",
+        "android_client_info": {
+          "package_name": "com.medicalheal.frontend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94177092800-fehjnpcvl5cl7aco79i84v84idt8imid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmfuQ9UHTmCVVcECA7jadsVnw8_8zUlQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94177092800-fehjnpcvl5cl7aco79i84v84idt8imid.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

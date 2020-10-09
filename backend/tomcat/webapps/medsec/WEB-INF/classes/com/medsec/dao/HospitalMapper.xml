@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.medsec.dao.HospitalMapper">
+
+    <select id="selectAllHospitals" resultType="com.medsec.entity.Hospital">
+        SELECT * FROM Hospital;
+    </select>
+
+    <select id="selectOneHospital" parameterType="String" resultType="com.medsec.entity.Hospital">
+        select * from Hospital where Hospital.id=#{id}
+    </select>
+
+    <delete id="deleteHospital" parameterType="String">
+        delete from Hospital where Hospital.id=#{id}
+    </delete>
+
+    <update id="updateHospital" parameterType="com.medsec.entity.Hospital">
+        update Hospital SET
+        Hospital.name=#{name},
+        Hospital.address=#{address},
+        Hospital.emergencyDept=#{emergencyDept},
+        Hospital.phone=#{phone},
+        Hospital.aftPhone=#{aftPhone},
+        Hospital.fax=#{fax},
+        Hospital.email=#{email},
+        Hospital.website=#{website}
+        where Hospital.id=#{id}
+    </update>
+
+    <insert id="addHospital" parameterType="com.medsec.entity.Hospital">
+        insert into Hospital (id, name, address, emergencyDept, phone, aftPhone, fax, email, website)
+        values (#{id},#{name},#{address},#{emergencyDept},#{phone},#{aftPhone},#{fax},#{email},#{website})
+    </insert>
+
+</mapper>

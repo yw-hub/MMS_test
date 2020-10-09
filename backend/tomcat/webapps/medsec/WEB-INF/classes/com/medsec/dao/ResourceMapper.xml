@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.medsec.dao.ResourceMapper">
+    <select id="getResourceById" parameterType="String" resultType="com.medsec.entity.Resource">
+        SELECT * FROM Resource WHERE Resource.id= #{id}
+    </select>
+
+    <select id="getResourcesByUserId" resultType="com.medsec.entity.Resource">
+        SELECT *
+        FROM Resource
+        WHERE Resource.uid= #{uid}
+    </select>
+
+    <insert id="insertResource" parameterType="com.medsec.entity.Resource">
+        INSERT INTO Resource (id, uid, name, date,content)
+        VALUES (#{id}, #{uid}, #{name}, #{date},#{content});
+    </insert>
+
+    <delete id="deleteResource" parameterType="String">
+        delete from Resource where Resource.id=#{id}
+    </delete>
+
+    <update id="updateResource" parameterType="com.medsec.entity.Resource">
+        UPDATE Resource SET
+        Resource.name= #{name},
+        Resource.content= #{content},
+        Resource.date= #{date}
+        WHERE Resource.id= #{id}
+    </update>
+</mapper>

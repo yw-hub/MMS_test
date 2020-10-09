@@ -1,0 +1,239 @@
+﻿.ax_default {
+  font-family:'ArialMT', 'Arial';
+  font-weight:400;
+  font-style:normal;
+  font-size:13px;
+  letter-spacing:normal;
+  color:#333333;
+  vertical-align:none;
+  text-align:center;
+  line-height:normal;
+  text-transform:none;
+}
+.box_1 {
+}
+.box_2 {
+}
+.ellipse {
+}
+.image {
+}
+.button {
+}
+.primary_button {
+  color:#FFFFFF;
+}
+.heading_1 {
+  font-family:'ArialMT', 'Arial';
+  font-weight:bold;
+  font-style:normal;
+  font-size:32px;
+  text-align:left;
+}
+.heading_2 {
+  font-family:'ArialMT', 'Arial';
+  font-weight:bold;
+  font-style:normal;
+  font-size:24px;
+  text-align:left;
+}
+.heading_3 {
+  font-family:'ArialMT', 'Arial';
+  font-weight:bold;
+  font-style:normal;
+  font-size:18px;
+  text-align:left;
+}
+.heading_4 {
+  font-family:'ArialMT', 'Arial';
+  font-weight:bold;
+  font-style:normal;
+  font-size:14px;
+  text-align:left;
+}
+.heading_5 {
+  font-family:'ArialMT', 'Arial';
+  font-weight:bold;
+  font-style:normal;
+  text-align:left;
+}
+.heading_6 {
+  font-family:'ArialMT', 'Arial';
+  font-weight:bold;
+  font-style:normal;
+  font-size:10px;
+  text-align:left;
+}
+.label {
+  font-size:14px;
+  text-align:left;
+}
+.paragraph {
+  text-align:left;
+}
+.text_field {
+  color:#000000;
+  text-align:left;
+}
+.flow_shape {
+}
+.paragraph1 {
+  font-size:13px;
+  color:#000000;
+  text-align:left;
+}
+.form_hint {
+  color:#999999;
+}
+.form_disabled {
+}
+.paragraph2 {
+  font-size:16px;
+  color:#000000;
+  text-align:left;
+}
+.image1 {
+  font-size:13px;
+  color:#000000;
+}
+.shape {
+  font-size:16px;
+  color:#000000;
+}
+.paragraph3 {
+  font-family:'Roboto';
+  font-weight:400;
+  font-style:normal;
+  text-align:left;
+}
+.line {
+}
+.flat_button {
+  font-family:'Roboto';
+  font-weight:500;
+  font-style:normal;
+  font-size:14px;
+  color:#2196F3;
+}
+.shape1 {
+}
+.box_11 {
+  font-family:'Roboto';
+  font-weight:400;
+  font-style:normal;
+  font-size:14px;
+}
+.box_12 {
+  font-family:'SFUIDisplay-Regular', 'SF UI Display';
+  font-weight:400;
+  font-style:normal;
+}
+.box_21 {
+  font-family:'SFUIDisplay-Regular', 'SF UI Display';
+  font-weight:400;
+  font-style:normal;
+}
+.ellipse1 {
+  font-family:'SFUIDisplay-Regular', 'SF UI Display';
+  font-weight:400;
+  font-style:normal;
+}
+.heading_11 {
+  font-family:'SFUIDisplay-Regular', 'SF UI Display';
+  font-weight:bold;
+  font-style:normal;
+  font-size:32px;
+  text-align:left;
+}
+.label1 {
+  font-family:'SFUIDisplay-Regular', 'SF UI Display';
+  font-weight:400;
+  font-style:normal;
+  font-size:14px;
+  text-align:left;
+}
+.image2 {
+  font-family:'SFUIDisplay-Regular', 'SF UI Display';
+  font-weight:400;
+  font-style:normal;
+}
+.icon {
+}
+.navigation_bar_bg {
+  font-family:'SFUIDisplay-Medium', 'SF UI Display Medium', 'SF UI Display';
+  font-weight:500;
+  font-style:normal;
+  font-size:20px;
+}
+.navigation_bar_title {
+  font-family:'SFUIDisplay-Semibold', 'SF UI Display Semibold', 'SF UI Display';
+  font-weight:650;
+  font-style:normal;
+  font-size:20px;
+  text-align:center;
+}
+.navigation_bar_title_with_subtitle {
+  font-family:'SFUIDisplay-Regular', 'SF UI Display';
+  font-weight:400;
+  font-style:normal;
+  font-size:16px;
+  text-align:center;
+}
+.navigation_bar_subtitle {
+  font-family:'SFUIDisplay-Medium', 'SF UI Display Medium', 'SF UI Display';
+  font-weight:500;
+  font-style:normal;
+  font-size:12px;
+  text-align:center;
+}
+.tab_bars___active {
+  font-family:'SFUIDisplay-Regular', 'SF UI Display';
+  font-weight:400;
+  font-style:normal;
+  font-size:11px;
+  color:#287BF6;
+  text-align:center;
+}
+.tab_bars___inactive {
+  font-family:'SFUIDisplay-Regular', 'SF UI Display';
+  font-weight:400;
+  font-style:normal;
+  font-size:11px;
+  color:#B1B1B2;
+  text-align:center;
+}
+.shape2 {
+  font-size:13px;
+  color:#000000;
+}
+.line1 {
+}
+.text_field1 {
+  font-size:13px;
+  color:#000000;
+  text-align:left;
+}
+.image3 {
+  font-family:'HelveticaNeue', 'Helvetica Neue';
+  font-weight:400;
+  font-style:normal;
+  font-size:13px;
+  color:#000000;
+}
+.image4 {
+  font-family:'Roboto';
+  font-weight:400;
+  font-style:normal;
+}
+.image5 {
+  font-family:'Roboto';
+  font-weight:400;
+  font-style:normal;
+  font-size:13px;
+  color:#000000;
+}
+.shape3 {
+  font-size:14px;
+  color:#000000;
+}
+textarea, select, input, button { outline: none; }

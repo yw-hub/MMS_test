@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration status="off">
+
+    <Properties>
+        <!-- configure the output path for each logging level-->
+        <Property name="INFO_LOG_FILE">logs/info</Property>
+        <Property name="WARN_LOG_FILE">logs/warn</Property>
+        <Property name="ERROR_LOG_FILE">logs/error</Property>
+        <Property name="DEBUG_LOG_FILE">logs/debug</Property>
+        <!-- configure the output content and pattern of the logger-->
+        <Property name="PATTERN_LAYOUT">%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level - %l - %msg%n</Property>
+    </Properties>
+
+    <Appenders>
+        <!-- configure the logging message print in the console -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY" />
+            <PatternLayout pattern="${PATTERN_LAYOUT}" />
+        </Console>
+
+        <!-- configure the debug level logging -->
+        <RollingFile name="RollingFileDebug" fileName="${DEBUG_LOG_FILE}/debug.log"
+                     filePattern="${DEBUG_LOG_FILE}/$${date:yyyy-MM}/debug-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="${PATTERN_LAYOUT}" />
+            <Filters>
+                <ThresholdFilter level="DEBUG" onMatch="NEUTRAL" onMismatch="DENY"/>
+                <ThresholdFilter level="INFO" onMatch="DENY" onMismatch="NEUTRAL" />
+            </Filters>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 M"/>
+            </Policies>
+            <DefaultRolloverStrategy max="300">
+                <Delete basePath="${DEBUG_LOG_FILE}" maxDepth="2">
+                    <IfFileName glob="*.log" />
+                    <IfLastModified age="15d" />
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <!-- configure the info level logging -->
+        <RollingFile name="RollingFileInfo" fileName="${INFO_LOG_FILE}/info.log"
+                     filePattern="${INFO_LOG_FILE}/$${date:yyyy-MM}/info-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="${PATTERN_LAYOUT}" />
+            <Filters>
+                <ThresholdFilter level="INFO" onMatch="NEUTRAL" onMismatch="DENY"/>
+                <ThresholdFilter level="WARN" onMatch="DENY" onMismatch="NEUTRAL" />
+            </Filters>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 M"/>
+            </Policies>
+            <DefaultRolloverStrategy max="300">
+                <Delete basePath="${${INFO_LOG_FILE}}" maxDepth="2">
+                    <IfFileName glob="*.log" />
+                    <IfLastModified age="15d" />
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <!-- configure the warn level logging -->
+        <RollingFile name="RollingFileWarn" fileName="${WARN_LOG_FILE}/warn.log"
+                     filePattern="${WARN_LOG_FILE}/$${date:yyyy-MM}/warn-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="${PATTERN_LAYOUT}" />
+            <Filters>
+                <ThresholdFilter level="WARN" onMatch="NEUTRAL" onMismatch="DENY"/>
+                <ThresholdFilter level="ERROR" onMatch="DENY" onMismatch="NEUTRAL" />
+            </Filters>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 M"/>
+            </Policies>
+            <DefaultRolloverStrategy max="300">
+                <Delete basePath="${WARN_LOG_FILE}" maxDepth="2">
+                    <IfFileName glob="*.log" />
+                    <IfLastModified age="15d" />
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <!-- configure the error level logging -->
+        <RollingFile name="RollingFileError" fileName="${ERROR_LOG_FILE}/error.log"
+                     filePattern="${ERROR_LOG_FILE}/$${date:yyyy-MM}/error-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="${PATTERN_LAYOUT}" />
+            <Filters>
+                <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY" />
+            </Filters>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 M"/>
+            </Policies>
+            <DefaultRolloverStrategy max="300">
+                <Delete basePath="${ERROR_LOG_FILE}" maxDepth="2">
+                    <IfFileName glob="*.log" />
+                    <IfLastModified age="15d" />
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+    </Appenders>
+
+    <!-- configure loggers and introduce appenders -->
+    <Loggers>
+        <!--third part logging-->
+        <logger name="org.mybatis" level="INFO">
+            <appender-ref ref="Console" />
+            <appender-ref ref="RollingFileDebug" />
+            <appender-ref ref="RollingFileInfo" />
+            <appender-ref ref="RollingFileWarn" />
+            <appender-ref ref="RollingFileError" />
+        </logger>
+        <logger name="org.glassfish.jersey.logging" level="debug">
+            <appender-ref ref="Console" />
+            <appender-ref ref="RollingFileDebug" />
+            <appender-ref ref="RollingFileInfo" />
+            <appender-ref ref="RollingFileWarn" />
+            <appender-ref ref="RollingFileError" />
+        </logger>
+
+
+         <!-- configure the root of logger -->
+         <root level="debug">
+             <appender-ref ref="Console" />
+             <appender-ref ref="RollingFileDebug" />
+             <appender-ref ref="RollingFileInfo" />
+             <appender-ref ref="RollingFileWarn" />
+             <appender-ref ref="RollingFileError" />
+         </root>
+    </Loggers>
+
+
+</Configuration>

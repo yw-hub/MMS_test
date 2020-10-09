@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.medsec.dao.RadiologyMapper">
+    <select id="selectAllRadiologies" resultType="com.medsec.entity.Radiology">
+        SELECT * FROM Radiology;
+    </select>
+    <select id="selectOneRadiology" parameterType="String" resultType="com.medsec.entity.Radiology">
+        select * from Radiology where Radiology.id=#{id}
+    </select>
+    <insert id="addRadiology" parameterType="com.medsec.entity.Radiology">
+        insert into Radiology (id,name,address,phone,fax,hours,email,website)
+        values(#{id},#{name},#{address},#{phone},#{fax},#{hours},#{email},#{website})
+    </insert>
+    <delete id="deleteRadiology" parameterType="String">
+        delete from Radiology where Radiology.id=#{id}
+    </delete>
+    <update id="updateRadiology" parameterType="com.medsec.entity.Radiology">
+        update Radiology set
+        Radiology.name=#{name},
+        Radiology.address=#{address},
+        Radiology.phone=#{phone},
+        Radiology.fax=#{fax},
+        Radiology.hours=#{hours},
+        Radiology.email=#{email},
+        Radiology.website=#{website}
+        where Radiology.id=#{id}
+    </update>
+</mapper>

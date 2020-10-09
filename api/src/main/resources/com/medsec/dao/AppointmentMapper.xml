@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.medsec.dao.AppointmentMapper">
+    <select id="getAppointmentById" parameterType="String" resultType="com.medsec.entity.Appointment">
+        SELECT * FROM Appointment WHERE id= #{id}
+    </select>
+
+    <select id="getAppointmentsByUserId" resultType="com.medsec.entity.Appointment">
+        SELECT *
+        FROM Appointment
+        WHERE uid= #{uid}
+        <choose>
+            <when test="since != null and until != null">
+                AND date BETWEEN #{since} AND #{until}
+            </when>
+            <when test="since != null and until == null">
+                AND date > #{since}
+            </when>
+            <when test="since == null and until != null">
+                <![CDATA[
+                AND date < #{until}
+                ]]>
+            </when>
+        </choose>
+        <choose>
+            <when test="status == null">
+                AND status != 'CANCELLED'
+            </when>
+            <otherwise>
+                AND status = #{status}
+            </otherwise>
+        </choose>
+    </select>
+
+    <update id="updateUserNoteById" parameterType="com.medsec.entity.Appointment">
+        UPDATE Appointment SET
+          user_note= #{user_note}
+        WHERE id= #{id}
+    </update>
+
+    <update id="updateStatusById" parameterType="com.medsec.entity.Appointment">
+        UPDATE Appointment SET
+          status= #{status}
+        WHERE id= #{id}
+    </update>
+
+    <insert id="insertAppointment" parameterType="com.medsec.entity.Appointment">
+        INSERT INTO Appointment (id, uid, did, title, detail, date_create, date_change, date, duration, note, status)
+        VALUES (#{id}, #{uid}, #{did}, #{title}, #{detail}, #{date_create}, #{date_change}, #{date}, #{duration}, #{note}, #{status});
+    </insert>
+
+    <update id="updateAppointment" parameterType="com.medsec.entity.Appointment">
+        UPDATE Appointment SET
+        did= #{did},
+        title= #{title},
+        detail= #{detail},
+        date_create= #{date_create},
+        date_change= #{date_change},
+        date= #{date},
+        duration= #{duration},
+        note= #{note},
+        status= #{status}
+        WHERE id= #{id}
+    </update>
+</mapper>

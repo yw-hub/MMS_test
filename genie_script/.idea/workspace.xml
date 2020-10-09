@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5b734b5f-49ba-4458-a25e-37a305559d63" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../api/src/main/resources/dbcp_local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/META-INF/maven/com.medsec/medsec/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/META-INF/maven/com.medsec/medsec/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/TestData/appointment.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/TestData/authentication_client.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/TestData/authentication_server.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/TestData/user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/client_ks.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/com/medsec/dao/AppointmentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/com/medsec/dao/DoctorMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/com/medsec/dao/FileMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/com/medsec/dao/HospitalMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/com/medsec/dao/NotificationTokenMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/com/medsec/dao/PathologyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/com/medsec/dao/PatientMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/com/medsec/dao/RadiologyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/com/medsec/dao/ResourceMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/com/medsec/dao/TestMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/com/medsec/dao/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/dbcp.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/dbcp_local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/dbcp_sample.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/classes/serverTrust_ks.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/activation-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/aopalliance-repackaged-2.5.0-b42.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/cdi-api-2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/commons-beanutils-1.9.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/commons-codec-1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/commons-collections-3.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/commons-configuration2-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/commons-dbcp2-2.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/commons-lang3-3.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/commons-pool2-2.5.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/cors-filter-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/gson-2.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/hamcrest-core-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/hk2-api-2.5.0-b42.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/hk2-locator-2.5.0-b42.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/hk2-utils-2.5.0-b42.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/httpclient-4.5.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/httpcore-4.4.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/jackson-annotations-2.9.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/jackson-core-2.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/jackson-databind-2.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/java-property-utils-1.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/javassist-3.22.0-CR2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/javax.annotation-api-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/javax.el-api-3.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/javax.inject-1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/javax.inject-2.5.0-b42.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/javax.interceptor-api-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/javax.json-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/javax.json-api-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/javax.json.bind-api-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/javax.mail-1.5.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/javax.ws.rs-api-2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/jaxb-api-2.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/jersey-client-2.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/jersey-common-2.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/jersey-container-servlet-2.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/jersey-container-servlet-core-2.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/jersey-hk2-2.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/jersey-media-jaxb-2.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/jersey-media-json-binding-2.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/jersey-media-multipart-2.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/jersey-server-2.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/jjwt-0.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/json-simple-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/jsr305-3.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/junit-4.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/log4j-api-2.11.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/log4j-core-2.11.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/log4j-jul-2.11.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/log4j-web-2.11.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/mimepull-1.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/mybatis-3.4.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/mysql-connector-java-8.0.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/osgi-resource-locator-1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/protobuf-java-2.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/simple-java-mail-4.4.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/slf4j-api-1.7.21.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/validation-api-1.1.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/lib/yasson-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../files/File-sample-2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../files/File-sample-267.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../files/Hospital1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../files/attachment.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../files/attachment/Doctor.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../files/attachment/Hospital.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../files/attachment/Pathology.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../files/attachment/Radiology.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../files/attachment/Sue Chris Patients.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../files/attachment/Sue Chris Patients.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/ios/Flutter/.last_build_id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/resources/TestData/appointment.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/resources/TestData/authentication_client.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/resources/TestData/authentication_server.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/resources/TestData/user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/resources/client_ks.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/resources/serverTrust_ks.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../api/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec.war" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/tomcat/webapps/medsec.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../files/Appointment-update.html" beforeDir="false" afterPath="$PROJECT_DIR$/../files/Appointment-update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../files/Appointment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../files/Appointment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../files/Doctor.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../files/Doctor.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../files/File-sample-1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../files/Hospital.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../files/Patient.html" beforeDir="false" afterPath="$PROJECT_DIR$/../files/Patient.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../files/Resource.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../files/Resource.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ios/Flutter/Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/ios/Flutter/Release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/ios/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/lib/screens/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/lib/screens/login.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/lib/util/firebase.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/lib/util/firebase.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/lib/util/serverDetails.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/lib/util/serverDetails.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client/GenieUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/GenieUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client/GenieUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/GenieUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client/QueryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/QueryManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/GENIEUpdateScript-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/GENIEUpdateScript-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hGgJxZwN93XjQtl0okjppiqFE1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="436" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="GenieUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client.GenieUI" />
+      <module name="genie_script" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GenieUI" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b734b5f-49ba-4458-a25e-37a305559d63" name="Default Changelist" comment="" />
+      <created>1599642775033</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599642775033</updated>
+      <workItem from="1599642776167" duration="1352000" />
+      <workItem from="1599644228694" duration="1861000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="140" y="349" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599644147535">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state x="140" y="349" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1344@0.23.2560.1344" timestamp="1599644147535" />
+    <state width="1261" height="51" key="GridCell.Tab.0.bottom" timestamp="1599645747118">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state width="1261" height="51" key="GridCell.Tab.0.bottom/0.23.2560.1344@0.23.2560.1344" timestamp="1599645747118" />
+    <state width="1261" height="51" key="GridCell.Tab.0.center" timestamp="1599645747118">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state width="1261" height="51" key="GridCell.Tab.0.center/0.23.2560.1344@0.23.2560.1344" timestamp="1599645747118" />
+    <state width="1261" height="51" key="GridCell.Tab.0.left" timestamp="1599645747117">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state width="1261" height="51" key="GridCell.Tab.0.left/0.23.2560.1344@0.23.2560.1344" timestamp="1599645747117" />
+    <state width="1261" height="51" key="GridCell.Tab.0.right" timestamp="1599645747118">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state width="1261" height="51" key="GridCell.Tab.0.right/0.23.2560.1344@0.23.2560.1344" timestamp="1599645747118" />
+  </component>
+</project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.medsec.dao.ResourceFileMapper">
+    <select id="selectRFileById" parameterType="String" resultType="com.medsec.entity.ResourceFile">
+        SELECT * FROM ResourceFile WHERE id=#{id}
+    </select>
+
+    <select id="getRFileLink" parameterType="String" resultType="String">
+        SELECT link FROM ResourceFile WHERE id=#{id}
+    </select>
+
+    <select id="maxID" resultType="String">
+        SELECT max(id) FROM ResourceFile
+    </select>
+
+    <insert id="insertRFile" parameterType="com.medsec.entity.ResourceFile">
+        INSERT INTO ResourceFile (id, uid, title, link,date)
+        VALUES (#{id},#{uid},#{title},#{link},#{date});
+    </insert>
+
+    <update id="updateRFile" parameterType="com.medsec.entity.ResourceFile">
+        update ResourceFile set
+        ResourceFile.uid=#{uid},
+        ResourceFile.title=#{title},
+        ResourceFile.link=#{link},
+        ResourceFile.date=#{date}
+        where ResourceFile.id=#{id}
+    </update>
+</mapper>

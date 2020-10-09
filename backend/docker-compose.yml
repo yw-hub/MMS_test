@@ -1,0 +1,70 @@
+version: '3'
+services:
+  web:
+    build:
+      context: ./www
+    restart: always
+    environment:
+      - ALLOW_OVERRIDE=true
+    ports:
+      - "80:80"
+    links:
+      - db
+    volumes:
+      - ./www/html:/var/www/html/
+    container_name: ${CLINIC_NAME}_WEB
+    environment:
+      COMPOSE_PROJECT_NAME: ${CLINIC_NAME}
+
+    hostname: WEB
+    networks:
+      backend:
+        aliases:
+          - WEB
+
+  tomcat:
+    build:
+      context: ./tomcat
+    restart: always
+    ports:
+      - "8080:8080"
+      - "11111:11111"
+    container_name: ${CLINIC_NAME}_TOMCAT
+    volumes:
+      - ./tomcat/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
+    networks:
+      backend:
+        aliases:
+          - TOMCAT
+  db:
+    build:
+      context: ./db
+    restart: always
+    volumes:
+      - sql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: test
+      MYSQL_DATABASE: database
+      COMPOSE_PROJECT_NAME: ${CLINIC_NAME}
+    ports:
+      - "8889:3306"
+    container_name: ${CLINIC_NAME}_DB
+
+    hostname: DB
+    networks:
+      backend:
+        ipv4_address: 10.5.0.6
+        aliases:
+          - DB
+
+networks:
+  backend:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.0/16
+
+volumes:
+  sql-data:
