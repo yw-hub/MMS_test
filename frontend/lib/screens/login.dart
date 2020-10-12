@@ -7,6 +7,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:frontend/util/serverDetails.dart';
 import 'package:frontend/util/firebase.dart';
 
+//test update 
+
+
 import 'package:url_launcher/url_launcher.dart';
 
 class LoginPage extends StatefulWidget {
@@ -159,7 +162,7 @@ class _LoginPageState extends State<LoginPage> {
         showDialog(
             context: context,
             builder: (context) => AlertDialog(
-                  title: Text("Error message"),
+                  title: Text("Error message:"),
                   content: Text(
                       "Oops! The password is wrong or the email is invalid."),
                   actions: <Widget>[
